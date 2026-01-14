@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora - Perfumes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="perfumes-page">
+
+<header>
+    <a href="index.html" class="logo">Velora<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="clothes.html">Clothes</a>
+        <a href="perfumes.html" class="active">Perfumes</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+        <a href="login.html"><i class="fas fa-user"></i></a>
+    </div>
+</header>
+
+<section class="page-header">
+    <h1>Our Perfume Collection</h1>
+    <p>Discover unforgettable scents for every mood</p>
+</section>
+
+<div class="filters">
+    <h3><i class="fas fa-filter"></i> Filter Perfumes</h3>
+    
+    <div class="filter-group">
+        <h4><i class="fas fa-wind"></i> Scent Type</h4>
+        <div class="filter-options">
+            <button class="filter-btn" data-scent="fresh">Fresh</button>
+            <button class="filter-btn" data-scent="floral">Floral</button>
+            <button class="filter-btn" data-scent="woody">Woody</button>
+            <button class="filter-btn" data-scent="herbal">Herbal</button>
+            <button class="filter-btn" data-scent="spicy">Spicy</button>
+        </div>
+    </div>
+    
+    <div class="filter-group">
+        <h4><i class="fas fa-user"></i> Gender</h4>
+        <div class="filter-options">
+            <button class="filter-btn active" data-gender="unisex">Unisex</button>
+            <button class="filter-btn" data-gender="male">Men</button>
+            <button class="filter-btn" data-gender="female">Women</button>
+        </div>
+    </div>
+</div>
+
+<section class="products-section">
+    <div class="products-grid">
+        <div class="product-card" data-id="p1" data-price="49.99" data-scent="fresh" data-gender="unisex" data-type="perfume">
+            <div class="product-image" style="background: linear-gradient(45deg, #ff6f61, #ff5252);">
+                <i class="fas fa-wind"></i>
+            </div>
+            <h3>Ocean Breeze</h3>
+            <p>Fresh aquatic scent with citrus notes</p>
+            <span class="price">$49.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="p2" data-price="59.99" data-scent="floral" data-gender="female" data-type="perfume">
+            <div class="product-image" style="background: linear-gradient(45deg, #9c27b0, #e91e63);">
+                <i class="fas fa-rose"></i>
+            </div>
+            <h3>Midnight Rose</h3>
+            <p>Romantic floral with mysterious depth</p>
+            <span class="price">$59.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="p3" data-price="54.99" data-scent="woody" data-gender="male" data-type="perfume">
+            <div class="product-image" style="background: linear-gradient(45deg, #795548, #3e2723);">
+                <i class="fas fa-mountain"></i>
+            </div>
+            <h3>Woodland Essence</h3>
+            <p>Earthy and woody masculine scent</p>
+            <span class="price">$54.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="p4" data-price="44.99" data-scent="herbal" data-gender="unisex" data-type="perfume">
+            <div class="product-image" style="background: linear-gradient(45deg, #4caf50, #2e7d32);">
+                <i class="fas fa-leaf"></i>
+            </div>
+            <h3>Fresh Meadow</h3>
+            <p>Green and herbal daytime fragrance</p>
+            <span class="price">$44.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="p5" data-price="64.99" data-scent="spicy" data-gender="unisex" data-type="perfume">
+            <div class="product-image" style="background: linear-gradient(45deg, #ff9800, #ff5722);">
+                <i class="fas fa-fire"></i>
+            </div>
+            <h3>Amber Spice</h3>
+            <p>Warm spicy scent for evening wear</p>
+            <span class="price">$64.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="p6" data-price="49.99" data-scent="fresh" data-gender="unisex" data-type="perfume">
+            <div class="product-image" style="background: linear-gradient(45deg, #2196f3, #0d47a1);">
+                <i class="fas fa-snowflake"></i>
+            </div>
+            <h3>Arctic Cool</h3>
+            <p>Crisp and cool unisex fragrance</p>
+            <span class="price">$49.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="clothes.html">Clothes</a>
+            <a href="perfumes.html">Perfumes</a>
+        </div>
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">© 2025 Velora. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

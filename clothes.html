@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velora - Clothes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="clothes-page">
+
+<header>
+    <a href="index.html" class="logo">Velora<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="clothes.html" class="active">Clothes</a>
+        <a href="perfumes.html">Perfumes</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+        <a href="login.html"><i class="fas fa-user"></i></a>
+    </div>
+</header>
+
+<section class="page-header">
+    <h1>Our Clothing Collection</h1>
+    <p>Discover trendy outfits for every occasion</p>
+</section>
+
+<div class="filters">
+    <h3><i class="fas fa-filter"></i> Filter Products</h3>
+    
+    <div class="filter-group">
+        <h4><i class="fas fa-tags"></i> Categories</h4>
+        <div class="filter-options">
+            <button class="filter-btn" data-category="tshirt">T-Shirts</button>
+            <button class="filter-btn" data-category="jeans">Jeans</button>
+            <button class="filter-btn" data-category="dress">Dresses</button>
+            <button class="filter-btn" data-category="suit">Suits</button>
+            <button class="filter-btn" data-category="shoes">Shoes</button>
+            <button class="filter-btn" data-category="jacket">Jackets</button>
+        </div>
+    </div>
+    
+    <div class="filter-group">
+        <h4><i class="fas fa-dollar-sign"></i> Price Range</h4>
+        <input type="range" id="priceRange" min="20" max="200" value="200" class="price-range">
+        <div class="price-display">
+            <span>$20</span>
+            <span id="priceValue">$200</span>
+        </div>
+    </div>
+</div>
+
+<section class="products-section">
+    <div class="products-grid">
+        <div class="product-card" data-id="cl1" data-price="29.99" data-category="tshirt" data-type="clothing">
+            <div class="product-image" style="background: linear-gradient(45deg, #ff6f61, #ff8a65);">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <h3>Summer T-Shirts</h3>
+            <p>Comfortable cotton t-shirts in vibrant colors</p>
+            <span class="price">$29.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="cl2" data-price="59.99" data-category="jeans" data-type="clothing">
+            <div class="product-image" style="background: linear-gradient(45deg, #6ec1e4, #4a90e2);">
+                <i class="fas fa-vest"></i>
+            </div>
+            <h3>Designer Jeans</h3>
+            <p>Premium denim with perfect fit</p>
+            <span class="price">$59.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="cl3" data-price="79.99" data-category="dress" data-type="clothing">
+            <div class="product-image" style="background: linear-gradient(45deg, #f9d423, #ff9800);">
+                <i class="fas fa-female"></i>
+            </div>
+            <h3>Elegant Dresses</h3>
+            <p>Beautiful dresses for special occasions</p>
+            <span class="price">$79.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="cl4" data-price="129.99" data-category="suit" data-type="clothing">
+            <div class="product-image" style="background: linear-gradient(45deg, #9c27b0, #673ab7);">
+                <i class="fas fa-male"></i>
+            </div>
+            <h3>Formal Suits</h3>
+            <p>Classic suits for professional settings</p>
+            <span class="price">$129.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="cl5" data-price="49.99" data-category="shoes" data-type="clothing">
+            <div class="product-image" style="background: linear-gradient(45deg, #4caf50, #8bc34a);">
+                <i class="fas fa-shoe-prints"></i>
+            </div>
+            <h3>Casual Shoes</h3>
+            <p>Comfortable footwear for everyday wear</p>
+            <span class="price">$49.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-id="cl6" data-price="89.99" data-category="jacket" data-type="clothing">
+            <div class="product-image" style="background: linear-gradient(45deg, #795548, #a1887f);">
+                <i class="fas fa-vest-patches"></i>
+            </div>
+            <h3>Winter Jackets</h3>
+            <p>Warm and stylish jackets for cold weather</p>
+            <span class="price">$89.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="clothes.html">Clothes</a>
+            <a href="perfumes.html">Perfumes</a>
+        </div>
+        <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p class="copyright">© 2025 Velora. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
